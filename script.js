@@ -5,17 +5,21 @@ const [ ,otherRandomCar ] = cars
 //Predict the output
 console.log(randomCar)
 console.log(otherRandomCar)
-// Output: 
+// Output: Tesla Mercedes
 
 
 // Problem 2
-const cars = ['Tesla', 'Mercedes', 'Honda']
-const [ randomCar ] = cars
-const [ ,otherRandomCar ] = cars
+const employee = {
+  name: 'Elon',
+  age: 47,
+  company: 'Tesla'
+}
+const { name: otherName } = employee;
 //Predict the output
-console.log(randomCar)
-console.log(otherRandomCar)
-// Output: 
+console.log(name);
+console.log(otherName);
+// Output: Only otherName will displayed, Elon 
+
 
 
 // Problem 3
@@ -29,7 +33,7 @@ const { password: hashedPassword } = person;
 //Predict the output
 console.log(password);
 console.log(hashedPassword);
-// Output: 
+// Output: 123456, undefined
 
 
 // Problem 4
@@ -40,7 +44,7 @@ const [,,,,,,,,third] = numbers;
 //Predict the output
 console.log(first == second);
 console.log(first == third);
-// Output: 
+// Output: false true
 
 
 
@@ -57,6 +61,6 @@ console.log(key);
 console.log(secondKey);
 console.log(secondKey[0]);
 console.log(willThisWork);
-// Output: 
+// Output: value [1,5,1,8,3,3] 1 5
 
 
